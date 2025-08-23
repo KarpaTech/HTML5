@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+:root{
+    --DarkKhaki:#BDB76B;
+    --AntiqueWhite: #FAEBD7;
+    --Black: #000;
+    --DarkOliveGreen:#556B2F;
+    --FloralWhite:#FFFAF0;
+    --Olive:#808000;
+}
+
+    body{
+        background: var(--FloralWhite);
+        color: var(--Black);
+        font-family: cursive;
+    }
+
+    /* Títulos e textos */
+    h1,h2,h3 {
+        font-weight: 500;
+    }
+
+    h1 {
+        color: var(--DarkOliveGreen);
+        font-size: 4rem;
+    }
+
+    h2 {
+        color: var(--DarkKhaki);
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        font-weight: 600;
+    }
+
+    h3 {
+        color: var(--Black);
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: justify;
+    }
+
+    /* Seções Gerais */
+    section {
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    /* Header e Menu */
+    header {
+        background: var(--Olive);
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+    }
+
+    nav a {
+        color: var(--FloralWhite);
+        font-size: 1.1rem;
+        text-decoration: none;
+    }
+    
+    nav a:hover {
+        color: var(--DarkKhaki);
+        text-decoration: underline;
+    }
+    
+    /* About */
+    #about article {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #about img {
+        width: 200px;
+        flex-shrink: 0;
+    }
+    #about p {
+        flex: 1;
+    }
+
+    /* Vídeo */
+    #video figure {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        color: var(--AntiqueWhite);
+        background-color: var(--DarkOliveGreen);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    footer section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    footer img {
+        width: 2rem;
+        height: 2rem;
+        display: block;
+        filter: invert(100%);
+        transition: filter 0.2s;
+    }
+
+    footer img:hover {
+        filter: brightness(0)
+                saturate(100%)
+                invert(99%)
+                sepia(39%)
+                saturate(1531%)
+                hue-rotate(21deg)
+                brightness(93%)
+                contrast(77%);
+    }
+
+    /* Contato */
+    .main_contato {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+    }
+
+    form input, textarea {
+        padding: 0.5rem;
+        border-radius: 0.75rem;
+        border: none;
+        font-size: 1rem;
+    }
+
+    textarea {
+        resize: none;
+        height: 5rem;
+    }
+
+    form button {
+        background: var(--FloralWhite);
+        color: var(--Olive);
+        padding: 0.75rem;
+        border: 1px solid var(--FloralWhite);
+        border-radius: 0.75rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    form button:hover {
+        background: var(--Black);
+    }
+
+    form span {
+        color: #FFFAF0;
+        font-size: 0.75rem;
+    }
+
+    /* Mapa */
+    .article_mapa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background: var(--FloralWhite);
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+    }
+
+    .article_mapa address {
+        width: 75%;
+    }
+
+    .article_mapa address p {
+        font-weight: 700;
+    }
+
+    .article_mapa iframe {
+        align-self: center;
+    }
